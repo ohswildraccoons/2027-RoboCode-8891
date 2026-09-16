@@ -12,7 +12,7 @@
   },
   "inverted": {
     "drive": false,
-    "angle": true
+    "angle": false
   },
   "absoluteEncoder": {
     "type": "revthroughbore_attached",
@@ -24,6 +24,6 @@
   "absoluteEncoderInverted": false,
   "location": {
     "front": -10.5,
-    "left": 19
+    "left": -10.5
   }
 }

@@ -45,7 +45,6 @@ public class SwerveSubsystem extends SubsystemBase
     return drive.drive(() -> ChassisSpeeds.fromFieldRelativeSpeeds(stream.get(),
                                                                    new Rotation2d(drive.getGyroAngle())));
   }
-
   /** Zero the gyro heading. Bind this to a button combo for field recovery. */
   public Command zeroGyro()
   {

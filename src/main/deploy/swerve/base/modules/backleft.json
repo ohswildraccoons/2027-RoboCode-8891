@@ -21,7 +21,7 @@
     "canbus": ""
   },
   "absoluteEncoderOffset": 0,
-  "absoluteEncoderInverted": true,
+  "absoluteEncoderInverted": false,
   "location": {
     "front": -10.5,
     "left": 10.5

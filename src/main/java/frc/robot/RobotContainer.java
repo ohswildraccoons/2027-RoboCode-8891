@@ -21,7 +21,7 @@ public class RobotContainer
       swerve.getAngularVelocityStream(
                 driverXbox::getLeftY,
                 driverXbox::getLeftX,
-                () -> driverXbox.getRawAxis(2))
+                driverXbox::getRightX)
             .withAllianceRelativeControl();
 
   public RobotContainer()
@@ -33,6 +33,7 @@ public class RobotContainer
   {
     // Default drive command
     swerve.setDefaultCommand(swerve.drive(driveAngularVelocity));
+    
 
     // Zero the gyro with Start + Back — use this if the field-relative heading drifts
     driverXbox.start().and(driverXbox.back()).onTrue(swerve.zeroGyro());

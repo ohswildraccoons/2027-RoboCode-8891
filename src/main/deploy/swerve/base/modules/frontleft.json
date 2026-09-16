@@ -12,7 +12,7 @@
   },
   "inverted": {
     "drive": false,
-    "angle": true
+    "angle": false
   },
   "absoluteEncoder": {
     "type": "revthroughbore_attached",

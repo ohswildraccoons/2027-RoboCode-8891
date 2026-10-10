@@ -22,10 +22,11 @@ public class RobotContainer
 
   private final SwerveInputStream driveAngularVelocity =
       swerve.getAngularVelocityStream(
-                () -> driverXbox.getLeftY() * 1.0 ,
-                () -> driverXbox.getLeftX() * 1.0 ,
+                () -> driverXbox.getLeftY() * -1.0 ,
+                () -> driverXbox.getLeftX() * -1.0 ,
                 () -> driverXbox.getRightX() * -1.0)
-            .withAllianceRelativeControl();
+            .withRobotRelative();
+            //.withAllianceRelativeControl()
 
   public RobotContainer()
   {
